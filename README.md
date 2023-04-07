@@ -208,3 +208,137 @@ div{
 }
 </style>
 </pre>
+<p>Kata1</p>
+<pre>
+<script>
+Add(4, -3, -2);
+function Add()
+{
+var sum=0;
+ for(let i=0;i<arguments[i];i++)
+ {
+	sum+=arguments[i]/(i+1);
+ }
+ alert(Math.round(sum));
+}
+</script>
+</pre>
+<p>Kata2</p>
+<pre>
+<script>
+Add(24, 85, 0);
+function Add()
+{
+var sum=0;
+var strResult="";
+ for(let i=arguments.length-1; i>=0; i--)
+ {
+	let str =arguments[i].toString(2);
+	
+	if(str.length<8)
+	{
+		let len=str.length;
+		let temp="";
+		while(len<8)
+		{
+			temp+="0";
+			len++;
+		}
+		temp+=str;
+		str=temp;
+	}
+	strResult+=str;
+ }
+ var res=parseInt(strResult,2);
+ alert(res);
+}
+</script>
+</pre>
+<p>Kata3</p>
+<pre>
+<script>
+Func("ABBCCD");
+function Func(str)
+{
+	var symbols=str[0];	
+	var res="";
+	for(i=1; i<str.length; i++)
+	{
+		if(symbols.includes(str[i])) continue;
+		else symbols+=str[i];
+	}	
+	for(i=0; i<symbols.length; i++)
+	{
+		let digit = symbols[i].charCodeAt(0);
+		if(digit==0) continue;
+		else res+=digit+" ";
+	}	
+	
+	alert(res);
+}
+</script>
+</pre>
+<p>Kata4</p>
+<pre>
+<script>
+Initials('code wars');
+function Initials(name)
+{
+var arr=name.split(' ');
+var i;
+var res="";
+ for(i=0; i<arr.length-1; i++)
+ {
+	res+=arr[i][0].toUpperCase()+'.';
+ }
+ res+=arr[i][0].toUpperCase();
+ for(i=1; i<arr[arr.length-1].length; i++)
+ {
+	res+=arr[arr.length-1][i];
+ }
+ 
+ alert(res);
+}
+</script>
+</pre>
+
+<p>Kata5</p>
+<pre>
+<script>
+titleToNumber('CODEWARS');
+function titleToNumber(str)
+{
+	let res=0;
+	
+	res+=str[str.length-1].charCodeAt(0)-'A'.charCodeAt(0)+1;
+	for(i=0; i<str.length-1; i++)
+	{
+		res+=(str[i].charCodeAt(0)-'A'.charCodeAt(0)+1)*26;
+	}
+	
+	alert(res);
+}
+</script>
+</pre>
+<p>Kata6</p>
+<pre>
+<script>
+maskify("312514235434234161111");
+function maskify(str)
+{
+	var res="";
+	if (str.length<=4)
+	{
+		alert(str);
+		return;
+	}	
+	for(i=0; i<str.length; i++)
+	{
+		if(str.length-i-1>=4) res+="#"
+		else res+=str[i];
+	}
+	
+	alert(res);
+}
+</script>
+</pre>
