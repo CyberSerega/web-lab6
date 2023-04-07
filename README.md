@@ -136,3 +136,75 @@ a.www:hover {
 }
 </style>
 </pre>
+<p>№22</p>
+<pre>
+<style>
+#one{
+	text-decoration: underline;
+}
+#two{
+	text-decoration: line-through;
+}
+#three{
+	text-decoration: overline;
+}
+</style>
+</pre>
+<p>№23</p>
+<pre>
+<style>
+div{
+	height:300px;
+	width:300px;
+	border: solid red 2px;
+}
+</style>
+</pre>
+<p>№24</p>
+<pre>
+<style>
+div{
+	height:300px;
+	width:700px;
+	border: solid blue 2px;
+}
+</style>
+</pre>
+<p>№25</p>
+<pre>
+<style>
+div{
+	height:400px;
+	width:400px;
+	border: solid blue 2px;
+	border-radius: 5px 20px 5px 20px; 
+}
+</style>
+</pre>
+<p>№26</p>
+<pre>
+<style>
+div{
+	height:400px;
+	width:400px;
+	border: solid red 2px;
+	border-radius: 50%;
+}
+</style>
+</pre>
+<p>№27</p>
+<pre>
+<style>
+
+#one {
+	color:green;
+}
+#two {
+	color:red;
+}
+#three {
+	color:black;
+	text-decoration:none;
+}
+</style>
+</pre>
