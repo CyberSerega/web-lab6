@@ -16,7 +16,9 @@
 <palign="justify">Задачи: применить технологии HTML и CSS.</p>
 
 <h2>Решение задач</h2>
-html {
+<pre>
+  <style>
+  html {
   font-size: 150%;
 }
 /* №1 */
@@ -132,3 +134,5 @@ a.www:hover {
 	color:red;
 	text-decoration:line-through;
 }
+</style>
+</pre>
