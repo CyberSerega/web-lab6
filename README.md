@@ -300,6 +300,7 @@ var res="";
  alert(res);
 }
 </script>
+
 </pre>
 
 <p>Kata5</p>
